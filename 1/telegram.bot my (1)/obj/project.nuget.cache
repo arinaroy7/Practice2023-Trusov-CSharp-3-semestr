@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "4GP9j6hZ/UDXjyXXcPysULM1786xHUWV7PYw5BM06NJz8Xl/DbgPL55YVW8+h8MTb1bln+9KN/YfEFbVyyVzTw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\arina\\Desktop\\Учеба\\Учеба 2 курс УдГУ\\Андрей Серг с#\\telegram.bot my (1)\\telegram.bot 1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\arina\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\arina\\.nuget\\packages\\telegram.bot\\19.0.0\\telegram.bot.19.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

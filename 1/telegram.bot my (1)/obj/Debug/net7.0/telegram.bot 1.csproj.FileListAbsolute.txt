@@ -1,0 +1,32 @@
+C:\Users\arina\Desktop\Учеба\Учеба 2 курс УдГУ\Трусов Алексей С\telegram.bot 1\bin\Debug\net7.0\telegram.bot 1.exe
+C:\Users\arina\Desktop\Учеба\Учеба 2 курс УдГУ\Трусов Алексей С\telegram.bot 1\bin\Debug\net7.0\telegram.bot 1.deps.json
+C:\Users\arina\Desktop\Учеба\Учеба 2 курс УдГУ\Трусов Алексей С\telegram.bot 1\bin\Debug\net7.0\telegram.bot 1.runtimeconfig.json
+C:\Users\arina\Desktop\Учеба\Учеба 2 курс УдГУ\Трусов Алексей С\telegram.bot 1\bin\Debug\net7.0\telegram.bot 1.dll
+C:\Users\arina\Desktop\Учеба\Учеба 2 курс УдГУ\Трусов Алексей С\telegram.bot 1\bin\Debug\net7.0\telegram.bot 1.pdb
+C:\Users\arina\Desktop\Учеба\Учеба 2 курс УдГУ\Трусов Алексей С\telegram.bot 1\obj\Debug\net7.0\telegram.bot 1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\arina\Desktop\Учеба\Учеба 2 курс УдГУ\Трусов Алексей С\telegram.bot 1\obj\Debug\net7.0\telegram.bot 1.AssemblyInfoInputs.cache
+C:\Users\arina\Desktop\Учеба\Учеба 2 курс УдГУ\Трусов Алексей С\telegram.bot 1\obj\Debug\net7.0\telegram.bot 1.AssemblyInfo.cs
+C:\Users\arina\Desktop\Учеба\Учеба 2 курс УдГУ\Трусов Алексей С\telegram.bot 1\obj\Debug\net7.0\telegram.bot 1.csproj.CoreCompileInputs.cache
+C:\Users\arina\Desktop\Учеба\Учеба 2 курс УдГУ\Трусов Алексей С\telegram.bot 1\obj\Debug\net7.0\telegram.bot 1.dll
+C:\Users\arina\Desktop\Учеба\Учеба 2 курс УдГУ\Трусов Алексей С\telegram.bot 1\obj\Debug\net7.0\refint\telegram.bot 1.dll
+C:\Users\arina\Desktop\Учеба\Учеба 2 курс УдГУ\Трусов Алексей С\telegram.bot 1\obj\Debug\net7.0\telegram.bot 1.pdb
+C:\Users\arina\Desktop\Учеба\Учеба 2 курс УдГУ\Трусов Алексей С\telegram.bot 1\obj\Debug\net7.0\telegram.bot 1.genruntimeconfig.cache
+C:\Users\arina\Desktop\Учеба\Учеба 2 курс УдГУ\Трусов Алексей С\telegram.bot 1\obj\Debug\net7.0\ref\telegram.bot 1.dll
+C:\Users\arina\Desktop\Учеба\Учеба 2 курс УдГУ\Андрей Серг с#\telegram.bot my (1)\bin\Debug\net7.0\telegram.bot 1.exe
+C:\Users\arina\Desktop\Учеба\Учеба 2 курс УдГУ\Андрей Серг с#\telegram.bot my (1)\bin\Debug\net7.0\telegram.bot 1.deps.json
+C:\Users\arina\Desktop\Учеба\Учеба 2 курс УдГУ\Андрей Серг с#\telegram.bot my (1)\bin\Debug\net7.0\telegram.bot 1.runtimeconfig.json
+C:\Users\arina\Desktop\Учеба\Учеба 2 курс УдГУ\Андрей Серг с#\telegram.bot my (1)\bin\Debug\net7.0\telegram.bot 1.dll
+C:\Users\arina\Desktop\Учеба\Учеба 2 курс УдГУ\Андрей Серг с#\telegram.bot my (1)\bin\Debug\net7.0\telegram.bot 1.pdb
+C:\Users\arina\Desktop\Учеба\Учеба 2 курс УдГУ\Андрей Серг с#\telegram.bot my (1)\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\arina\Desktop\Учеба\Учеба 2 курс УдГУ\Андрей Серг с#\telegram.bot my (1)\bin\Debug\net7.0\Telegram.Bot.dll
+C:\Users\arina\Desktop\Учеба\Учеба 2 курс УдГУ\Андрей Серг с#\telegram.bot my (1)\obj\Debug\net7.0\telegram.bot 1.csproj.AssemblyReference.cache
+C:\Users\arina\Desktop\Учеба\Учеба 2 курс УдГУ\Андрей Серг с#\telegram.bot my (1)\obj\Debug\net7.0\telegram.bot 1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\arina\Desktop\Учеба\Учеба 2 курс УдГУ\Андрей Серг с#\telegram.bot my (1)\obj\Debug\net7.0\telegram.bot 1.AssemblyInfoInputs.cache
+C:\Users\arina\Desktop\Учеба\Учеба 2 курс УдГУ\Андрей Серг с#\telegram.bot my (1)\obj\Debug\net7.0\telegram.bot 1.AssemblyInfo.cs
+C:\Users\arina\Desktop\Учеба\Учеба 2 курс УдГУ\Андрей Серг с#\telegram.bot my (1)\obj\Debug\net7.0\telegram.bot 1.csproj.CoreCompileInputs.cache
+C:\Users\arina\Desktop\Учеба\Учеба 2 курс УдГУ\Андрей Серг с#\telegram.bot my (1)\obj\Debug\net7.0\telegram.bot 1.csproj.CopyComplete
+C:\Users\arina\Desktop\Учеба\Учеба 2 курс УдГУ\Андрей Серг с#\telegram.bot my (1)\obj\Debug\net7.0\telegram.bot 1.dll
+C:\Users\arina\Desktop\Учеба\Учеба 2 курс УдГУ\Андрей Серг с#\telegram.bot my (1)\obj\Debug\net7.0\refint\telegram.bot 1.dll
+C:\Users\arina\Desktop\Учеба\Учеба 2 курс УдГУ\Андрей Серг с#\telegram.bot my (1)\obj\Debug\net7.0\telegram.bot 1.pdb
+C:\Users\arina\Desktop\Учеба\Учеба 2 курс УдГУ\Андрей Серг с#\telegram.bot my (1)\obj\Debug\net7.0\telegram.bot 1.genruntimeconfig.cache
+C:\Users\arina\Desktop\Учеба\Учеба 2 курс УдГУ\Андрей Серг с#\telegram.bot my (1)\obj\Debug\net7.0\ref\telegram.bot 1.dll
