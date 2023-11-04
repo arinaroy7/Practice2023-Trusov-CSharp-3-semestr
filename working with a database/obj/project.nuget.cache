@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "y6y9uTk6h3vpea4Oc7kVBbw1A8EiOmFmO3SauYlzjXtp7c8BQvzl4qhXtM+sQ17QJbW2/mBthR9p8IFbtpkItg==",
+  "dgSpecHash": "HpC/mySxP7XeMfjFg85NbxHW9jSi4BFgfvu+lSv/3XEDA2IPAIGbzhS/9HppI6Hl61sBv612KoCRfh4jO2mLKg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\arina\\Desktop\\Учеба\\Учеба 2 курс УдГУ\\Андрей Серг с#\\5. Задание 19.10.23\\5. Задание 19.10.23.csproj",
+  "projectFilePath": "C:\\Users\\arina\\Desktop\\Учеба\\Учеба 2 курс УдГУ\\Андрей Серг с#\\5. База данных 19-02. окт-ноябрь\\5. Задание 19.10.23.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\arina\\.nuget\\packages\\dapper\\2.1.15\\dapper.2.1.15.nupkg.sha512",
     "C:\\Users\\arina\\.nuget\\packages\\microsoft.data.sqlite\\7.0.13\\microsoft.data.sqlite.7.0.13.nupkg.sha512",
