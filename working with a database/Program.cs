@@ -21,7 +21,7 @@ namespace YourNamespace {
             //Заполнение таблиц базы данных 
             using (var connection = new SqliteConnection(connectionString))
             {
-                connection.Open();
+                /*connection.Open();
 
                 connection.Execute("INSERT INTO users (Login, Password) VALUES (@Login, @Password)",
                     new { Login = "Vasya", Password = "123" });
@@ -39,37 +39,82 @@ namespace YourNamespace {
 
                 //SQL - запрос u.UserId-идентификатор пользователя из таблицы users
                 //SUM(o.Price) AS TotalPrice - суммирует столбец Price из таблицы orders -> результат в TotalPrice
-
+                */
+                
                 var query = @"
                     SELECT
-                        u.[ID заказа] AS UserId, 
+                        u.[ID] AS UserId, 
                         u.Login,
                         SUM(o.Price) AS TotalPrice
                     FROM users u
-                    LEFT JOIN orders o ON u.[ID заказа] = o.UserID
-                    GROUP BY u.[ID заказа], u.Login
+                    LEFT JOIN orders o ON u.[ID] = o.UserID
+                    GROUP BY u.[ID], u.Login
                 ";
 
                 var usersWithTotalPrice = connection.Query<UserWithTotalPrice>(query);
 
-                //вывод данных в консоль
                 foreach (var user in usersWithTotalPrice)
                 {
                     Console.WriteLine($"User: {user.Login}, Total Price of Orders: {user.TotalPrice}");
                 }
+
+                Console.WriteLine("Введите команду (transfer для перевода средств):");
+                string command = Console.ReadLine();
+
+                if (command == "transfer")
+                {
+                    Console.WriteLine("Введите ID покупателя:");
+                    int buyerUserId = int.Parse(Console.ReadLine());
+
+                    Console.WriteLine("Введите ID продавца:");
+                    int sellerUserId = int.Parse(Console.ReadLine());
+
+                    Console.WriteLine("Введите стоимость товара:");
+                    int itemCost = int.Parse(Console.ReadLine());
+
+                    //TransferFunds(connection, buyerUserId, sellerUserId, itemCost);
             }
 
         }
     }
 
+    static void TransferFunds(SqliteConnection connection, int buyerUserId, int sellerUserId, int itemCost)
+        {
+            int buyerBalance = connection.QueryFirstOrDefault<int>("SELECT Balance FROM Users WHERE ID = @UserId", new { UserId = buyerUserId });
+
+            if (buyerBalance >= itemCost)
+            {
+                // Если у покупателя достаточно средств, выполняем транзакцию
+                using (var transaction = connection.BeginTransaction())
+                {
+                    try
+                    {
+                        connection.Execute("UPDATE Users SET Balance = Balance - @Cost WHERE ID = @UserId", new { Cost = itemCost, UserId = buyerUserId });
+
+                        connection.Execute("UPDATE Users SET Balance = Balance + @Cost WHERE ID = @UserId", new { Cost = itemCost, UserId = sellerUserId });
+
+                        transaction.Commit(); //успешно
+
+                        Console.WriteLine("Перевод средств выполнен успешно.");
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"Ошибка: {ex.Message}");
+                        transaction.Rollback(); //ошибка
+                    }
+                }
+            }
+            else
+            {
+                Console.WriteLine("Недостаточно средств у покупателя.");
+            }
+        }
+    }
 }
 
 /* пара за 26 октября
 
 транзакции - несколько запросов в базу данных, которые должны быть выполнены или не выполнены
-есть игра, у игроков есть возможность торговать. 1 таблица players - 2 колонки  id и gold 
-Items (колонка, что продаем) - id(принадлежности игроку шапки или кепки) , pid, cost(стоимость предметов, за сколько продаем), name (шапка, кепка)
-первый игрок покупает шапку  увторого игрока 
 
 *Pid-player id - > идентификатор, кому принадлежит предмет 
 *В SQL запросы все значения передаем через параметры
@@ -80,12 +125,27 @@ UPDATE  Players SET gold=25 WHERE id=1 -> обновляем количеств�
 UPDATE  Players SET gold=25 WHERE id=2
 UPDATE Itams SET pid=1 WHERE id=1 
 
-В единицу времени будет одна покупка, одна продажа 
-*Почитать про транзкации var tx = ... (транзакция открыта) .... tx.Commit(); (Транзакция закрыта и применина)
 tx.RollBack; - откатить назад транзакцию  -> вернет золото обратно, если предмет был куплен другим человеком ранее
 
 Если что-то идет не так генерируем исключение командой throw (она прыгает к ближайшему catch) -> throw new Exception("Недостаточно денег!");
 
-ДЗ: 26.10.23 на транзакции. У нас уже есть программа, которая выводит сумму по заказам конкретного игрока. Добавить еще одну функцию, которая
+ДЗ: на транзакции. У нас уже есть программа, которая выводит сумму по заказам конкретного игрока. Добавить еще одну функцию, которая
 переводит средства с одного заказа на другой (перевод с карты на карту) с проверками - > стоимость заказа не станет отриц, необходимо засунуть в транкзацию 
+
+SQL запросы: 
+
+1. Для добавления нового столбца 
+
+CREATE TABLE Users (
+    ID INTEGER PRIMARY KEY AUTOINCREMENT,
+    Login TEXT NOT NULL,
+    Balance INTEGER NOT NULL
+);
+
+2. Изменение имени столбца
+
+ALTER TABLE users
+RENAME COLUMN "ID заказа" TO "ID пользователя";
+
+3. 
 */

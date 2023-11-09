@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\arina\\Desktop\\Учеба\\Учеба 2 курс УдГУ\\git-hub\\Practice2023-Trusov-CSharp-3-semestr\\working with a database\\5. Задание 19.10.23.csproj": {}
+    "C:\\Users\\arina\\Desktop\\Учеба\\Учеба 2 курс УдГУ\\Андрей Серг с#\\6 09.11.2023\\6 09.11.2023.csproj": {}
   },
   "projects": {
-    "C:\\Users\\arina\\Desktop\\Учеба\\Учеба 2 курс УдГУ\\git-hub\\Practice2023-Trusov-CSharp-3-semestr\\working with a database\\5. Задание 19.10.23.csproj": {
+    "C:\\Users\\arina\\Desktop\\Учеба\\Учеба 2 курс УдГУ\\Андрей Серг с#\\6 09.11.2023\\6 09.11.2023.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\arina\\Desktop\\Учеба\\Учеба 2 курс УдГУ\\git-hub\\Practice2023-Trusov-CSharp-3-semestr\\working with a database\\5. Задание 19.10.23.csproj",
-        "projectName": "5. Задание 19.10.23",
-        "projectPath": "C:\\Users\\arina\\Desktop\\Учеба\\Учеба 2 курс УдГУ\\git-hub\\Practice2023-Trusov-CSharp-3-semestr\\working with a database\\5. Задание 19.10.23.csproj",
+        "projectUniqueName": "C:\\Users\\arina\\Desktop\\Учеба\\Учеба 2 курс УдГУ\\Андрей Серг с#\\6 09.11.2023\\6 09.11.2023.csproj",
+        "projectName": "6 09.11.2023",
+        "projectPath": "C:\\Users\\arina\\Desktop\\Учеба\\Учеба 2 курс УдГУ\\Андрей Серг с#\\6 09.11.2023\\6 09.11.2023.csproj",
         "packagesPath": "C:\\Users\\arina\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\arina\\Desktop\\Учеба\\Учеба 2 курс УдГУ\\git-hub\\Practice2023-Trusov-CSharp-3-semestr\\working with a database\\obj\\",
+        "outputPath": "C:\\Users\\arina\\Desktop\\Учеба\\Учеба 2 курс УдГУ\\Андрей Серг с#\\6 09.11.2023\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\arina\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -37,16 +37,6 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "dependencies": {
-            "Dapper": {
-              "target": "Package",
-              "version": "[2.1.15, )"
-            },
-            "Microsoft.Data.Sqlite": {
-              "target": "Package",
-              "version": "[7.0.13, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
