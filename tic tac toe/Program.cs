@@ -11,7 +11,7 @@ namespace TicTacToeNamespace
     {
         static void Main(string[] args)
         {
-            TicTacToeGame game = new TicTacToeGame();
+            TicTacToe game = new TicTacToe();
 
             while (!game.IsDraw() && !game.CheckWin())
             {

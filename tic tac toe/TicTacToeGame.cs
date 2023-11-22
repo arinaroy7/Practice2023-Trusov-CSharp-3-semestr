@@ -1,11 +1,11 @@
 
 
 namespace TicTacToeNamespace {
-    public class TicTacToeGame
+    public class TicTacToe
     {
         private char[,] board; //Массив игрового поля
         private char currentPlayer; //Текущий игрок (X или O)
-        public TicTacToeGame()
+        public TicTacToe()
         {
             board = new char[3, 3];
             InitializeBoard();

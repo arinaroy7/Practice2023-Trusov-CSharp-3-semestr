@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\arina\\Desktop\\Учеба\\Учеба 2 курс УдГУ\\Андрей Серг с#\\6 09.11.2023\\6 09.11.2023.csproj": {}
+    "C:\\Users\\arina\\Desktop\\Учеба\\Учеба 2 курс УдГУ\\git-hub\\Practice2023-Trusov-CSharp-3-semestr\\tic tac toe\\6 09.11.2023.csproj": {}
   },
   "projects": {
-    "C:\\Users\\arina\\Desktop\\Учеба\\Учеба 2 курс УдГУ\\Андрей Серг с#\\6 09.11.2023\\6 09.11.2023.csproj": {
+    "C:\\Users\\arina\\Desktop\\Учеба\\Учеба 2 курс УдГУ\\git-hub\\Practice2023-Trusov-CSharp-3-semestr\\tic tac toe\\6 09.11.2023.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\arina\\Desktop\\Учеба\\Учеба 2 курс УдГУ\\Андрей Серг с#\\6 09.11.2023\\6 09.11.2023.csproj",
+        "projectUniqueName": "C:\\Users\\arina\\Desktop\\Учеба\\Учеба 2 курс УдГУ\\git-hub\\Practice2023-Trusov-CSharp-3-semestr\\tic tac toe\\6 09.11.2023.csproj",
         "projectName": "6 09.11.2023",
-        "projectPath": "C:\\Users\\arina\\Desktop\\Учеба\\Учеба 2 курс УдГУ\\Андрей Серг с#\\6 09.11.2023\\6 09.11.2023.csproj",
+        "projectPath": "C:\\Users\\arina\\Desktop\\Учеба\\Учеба 2 курс УдГУ\\git-hub\\Practice2023-Trusov-CSharp-3-semestr\\tic tac toe\\6 09.11.2023.csproj",
         "packagesPath": "C:\\Users\\arina\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\arina\\Desktop\\Учеба\\Учеба 2 курс УдГУ\\Андрей Серг с#\\6 09.11.2023\\obj\\",
+        "outputPath": "C:\\Users\\arina\\Desktop\\Учеба\\Учеба 2 курс УдГУ\\git-hub\\Practice2023-Trusov-CSharp-3-semestr\\tic tac toe\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\arina\\AppData\\Roaming\\NuGet\\NuGet.Config"
