@@ -8,11 +8,11 @@ namespace TicTacToeNamespace {
         public TicTacToe()
         {
             board = new char[3, 3];
-            InitializeBoard();
+            SetBoard();
             currentPlayer = 'X'; 
         }
 
-        private void InitializeBoard()
+        private void SetBoard()
         {
             for (int i = 0; i < 3; i++)
             {
@@ -32,16 +32,14 @@ namespace TicTacToeNamespace {
             }
             else
             {
-                Console.WriteLine("Эта клетка занята. Попробуйте другую.");
+                Console.WriteLine("Клетка занята. Попробуйте другую.");
             }
         }
 
-        private void SwitchPlayer()   //Переключение игрока
+        private void SwitchPlayer() 
         {
             currentPlayer = (currentPlayer == 'X') ? 'O' : 'X';
         }
-
-        //Проверка на ничью
         public bool IsDraw()
         {
             for (int i = 0; i < 3; i++)
@@ -79,11 +77,11 @@ namespace TicTacToeNamespace {
 
         public void PrintBoard()
         {
-            Console.WriteLine("  0   1   2");
-            Console.WriteLine("-------------");
+            Console.WriteLine("  0   1   2  ");
+            Console.WriteLine("---------------");
             for (int i = 0; i < 3; i++)
         {
-            Console.Write($"{i} |");
+            Console.Write($" {i} |");
             for (int j = 0; j < 3; j++)
             {
                 char symbol = board[i, j] == ' ' ? '-' : board[i, j];
@@ -98,11 +96,6 @@ namespace TicTacToeNamespace {
 
         {
             return currentPlayer;
-        }
-
-        public char GetSymbol(int row, int col)
-        {
-            return board[row, col];
         }
     }
 }
