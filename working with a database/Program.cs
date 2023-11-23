@@ -82,9 +82,12 @@ namespace YourNamespace {
         {
             int buyerBalance = connection.QueryFirstOrDefault<int>("SELECT Balance FROM Users WHERE ID = @UserId", new { UserId = buyerUserId });
 
-            if (buyerBalance >= itemCost)
+            if (buyerBalance >= itemCost) // если денег нет, транзакция не выполняется 
             {
                 // Если у покупателя достаточно средств, выполняем транзакцию
+                // Слабое место - мы отдельно запрашиваем баланс пользователя и отдельно проверяем есть ли деньги
+                // функцию buyerBalance убираем в транзакции - проверку баланса заключаем во внутрть транзакции .если баланс недостаточный, то update не выполняем 
+                // using выносим на ... 
                 using (var transaction = connection.BeginTransaction())
                 {
                     try

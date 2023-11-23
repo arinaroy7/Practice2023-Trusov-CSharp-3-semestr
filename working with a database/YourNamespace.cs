@@ -7,3 +7,8 @@ namespace YourNamespace
         public decimal TotalPrice { get; set; }
     }
 }
+/*
+23.11.23
+Указать путь для базы данных string connectionString = 'Data .... по фото' + кинуть базу данных в папку с файлами
+
+*/

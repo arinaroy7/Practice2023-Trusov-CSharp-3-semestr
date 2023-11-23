@@ -97,5 +97,9 @@ namespace TicTacToeNamespace {
         {
             return currentPlayer;
         }
+
     }
 }
+/*
+23.11.23 Функцию "рисовать" вынести из класса. Научиться правильно писать классы. 
+*/
