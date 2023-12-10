@@ -78,38 +78,36 @@ namespace YourNamespace {
         }
     }
 
-    static void TransferFunds(SqliteConnection connection, int buyerUserId, int sellerUserId, int itemCost)
+        static void TransferFunds(SqliteConnection connection, int buyerUserId, int sellerUserId, int itemCost)
         {
-            int buyerBalance = connection.QueryFirstOrDefault<int>("SELECT Balance FROM Users WHERE ID = @UserId", new { UserId = buyerUserId });
-
-            if (buyerBalance >= itemCost) // если денег нет, транзакция не выполняется 
+            using (var transaction = connection.BeginTransaction())
             {
-                // Если у покупателя достаточно средств, выполняем транзакцию
-                // Слабое место - мы отдельно запрашиваем баланс пользователя и отдельно проверяем есть ли деньги
-                // функцию buyerBalance убираем в транзакции - проверку баланса заключаем во внутрть транзакции .если баланс недостаточный, то update не выполняем 
-                // using выносим на ... 
-                using (var transaction = connection.BeginTransaction())
+                try
                 {
-                    try
+                    //проверка средств покупателя 
+                    int buyerBalance = connection.QueryFirstOrDefault<int>("SELECT Balance FROM Users WHERE ID = @UserId", new { UserId = buyerUserId });
+
+                    if (buyerBalance >= itemCost)
                     {
                         connection.Execute("UPDATE Users SET Balance = Balance - @Cost WHERE ID = @UserId", new { Cost = itemCost, UserId = buyerUserId });
 
                         connection.Execute("UPDATE Users SET Balance = Balance + @Cost WHERE ID = @UserId", new { Cost = itemCost, UserId = sellerUserId });
 
-                        transaction.Commit(); //успешно
+                        transaction.Commit(); //успешная тарнзакция
 
                         Console.WriteLine("Перевод средств выполнен успешно.");
                     }
-                    catch (Exception ex)
+                    else 
                     {
-                        Console.WriteLine($"Ошибка: {ex.Message}");
-                        transaction.Rollback(); //ошибка
+                        Console.WriteLine("Недостаточно средств у покупателя.");
                     }
                 }
-            }
-            else
-            {
-                Console.WriteLine("Недостаточно средств у покупателя.");
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Ошибка: {ex.Message}");
+                    transaction.Rollback(); //ошибка  в транзакции
+                }
+                
             }
         }
     }
