@@ -1,0 +1,14 @@
+C:\Users\arina\Desktop\Учеба\Учеба 2 курс УдГУ\Андрей Серг с#\30.11.23\bin\Debug\net7.0\30.11.23.exe
+C:\Users\arina\Desktop\Учеба\Учеба 2 курс УдГУ\Андрей Серг с#\30.11.23\bin\Debug\net7.0\30.11.23.deps.json
+C:\Users\arina\Desktop\Учеба\Учеба 2 курс УдГУ\Андрей Серг с#\30.11.23\bin\Debug\net7.0\30.11.23.runtimeconfig.json
+C:\Users\arina\Desktop\Учеба\Учеба 2 курс УдГУ\Андрей Серг с#\30.11.23\bin\Debug\net7.0\30.11.23.dll
+C:\Users\arina\Desktop\Учеба\Учеба 2 курс УдГУ\Андрей Серг с#\30.11.23\bin\Debug\net7.0\30.11.23.pdb
+C:\Users\arina\Desktop\Учеба\Учеба 2 курс УдГУ\Андрей Серг с#\30.11.23\obj\Debug\net7.0\30.11.23.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\arina\Desktop\Учеба\Учеба 2 курс УдГУ\Андрей Серг с#\30.11.23\obj\Debug\net7.0\30.11.23.AssemblyInfoInputs.cache
+C:\Users\arina\Desktop\Учеба\Учеба 2 курс УдГУ\Андрей Серг с#\30.11.23\obj\Debug\net7.0\30.11.23.AssemblyInfo.cs
+C:\Users\arina\Desktop\Учеба\Учеба 2 курс УдГУ\Андрей Серг с#\30.11.23\obj\Debug\net7.0\30.11.23.csproj.CoreCompileInputs.cache
+C:\Users\arina\Desktop\Учеба\Учеба 2 курс УдГУ\Андрей Серг с#\30.11.23\obj\Debug\net7.0\30.11.23.dll
+C:\Users\arina\Desktop\Учеба\Учеба 2 курс УдГУ\Андрей Серг с#\30.11.23\obj\Debug\net7.0\refint\30.11.23.dll
+C:\Users\arina\Desktop\Учеба\Учеба 2 курс УдГУ\Андрей Серг с#\30.11.23\obj\Debug\net7.0\30.11.23.pdb
+C:\Users\arina\Desktop\Учеба\Учеба 2 курс УдГУ\Андрей Серг с#\30.11.23\obj\Debug\net7.0\30.11.23.genruntimeconfig.cache
+C:\Users\arina\Desktop\Учеба\Учеба 2 курс УдГУ\Андрей Серг с#\30.11.23\obj\Debug\net7.0\ref\30.11.23.dll
